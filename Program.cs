@@ -1,23 +1,5 @@
-﻿//book management system
-//login and resigration
-//functionality for user and for admin
-//for admin: 
-//add, update, delete book
-//list all books 
-//search book by title, author, genre...
-
-//for users
-//borrow book
-//return book
-//view borrowing history
-//search for books by criteria : title, author, genre ISBN
-
-using System.Globalization;
-using BookManagementSystem;
+﻿using BookManagementSystem;
 using BookManagementSystem.Services;
-using CsvHelper;
-using CsvHelper.Configuration;
-using SQLitePCL;
 using AppContext = BookManagementSystem.AppContext;
 
 var db = new AppContext();
@@ -47,6 +29,7 @@ if (int.TryParse(a, out int number))
             break;
         case 2: 
             Console.WriteLine("registered");
+            Console.WriteLine("Not yet implemented");
             break; 
         
     }    
